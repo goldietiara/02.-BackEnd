@@ -1,0 +1,23 @@
+{
+  "name": "03.-back-end-development",
+  "version": "1.0.0",
+  "description": "belajar node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldietiara/02.-BackEnd.git"
+  },
+  "author": "dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goldietiara/02.-BackEnd/issues"
+  },
+  "homepage": "https://github.com/goldietiara/02.-BackEnd#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "moment": "^2.29.4"
+  }
+}
