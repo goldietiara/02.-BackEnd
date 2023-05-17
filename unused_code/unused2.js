@@ -1,15 +1,16 @@
-const http = require("http");
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
-const server = http.createServer((req, res) => {
-  if (req.method === "GET") {
-    // menggambil data or menampilkan data (SELECT)
-  } else if (req.method === "POST") {
-    // menambahkan data ke server
-  } else if (req.method === "PUT") {
-    // mengganti seluruh data yang dituju pada sever
-  } else if (req.method === "PATCH") {
-    // memodifikasi atau memperbaharui sebagai data yang kita tuju
-  } else if (req.method === "DELETE") {
-    //untuk menghapus data
-  }
-});
+const fs = require("fs");
+const PORT = 2601;
+
+const app = express();
+
+app.use(cors());
+app.use(bodyParser());
+
+const { productsRouter } = require("./unused_code/router");
+app.use("/data", productsRouter);
+
+app.listen(PORT, () => console.log(`Server Running ${PORT} YEAAYYY!!! XD`));
